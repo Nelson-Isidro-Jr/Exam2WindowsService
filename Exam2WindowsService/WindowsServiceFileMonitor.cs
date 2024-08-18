@@ -20,21 +20,25 @@ namespace Exam2WindowsService
         public WindowsServiceFileMonitor()
         {
             InitializeComponent();
-            ServiceName = "WindowsServiceFileMonitor";
+            
+        }
+
+        private void SetupFileSystemWatcher()
+        {
+            folder1Watcher = new FileSystemWatcher(sourceFolderPath)
+            {
+                NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite,
+                Filter = "*.*"
+            };
+            folder1Watcher.Created += OnFileCreated;
+
+
         }
 
         protected override void OnStart(string[] args)
         {
-
-            folder1Watcher = new FileSystemWatcher(sourceFolderPath)
-            {
-                NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite,
-                Filter = "*.*",
-                EnableRaisingEvents = true
-            };
-
-            folder1Watcher.Created += OnFileCreated;
-
+            folder1Watcher.EnableRaisingEvents = true;
+            SetupFileSystemWatcher();
         }
 
         private void OnFileCreated(object sender, FileSystemEventArgs e)
