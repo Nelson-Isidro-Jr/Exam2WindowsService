@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\exam2windowsservice\\windowsservicefilemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|solutionrelative:exam2windowsservice\\windowsservicefilemonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|c:\\users\\hade\\source\\repos\\exam2windowsservice\\exam2windowsservice\\projectinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|solutionrelative:exam2windowsservice\\projectinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|c:\\users\\hade\\source\\repos\\exam2windowsservice\\exam2windowsservice\\projectinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4EC3E-7793-4252-903B-120C523669A3}|Exam2WindowsService\\Exam2WindowsService.csproj|solutionrelative:exam2windowsservice\\projectinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\ProjectInstaller.cs",
+              "RelativeDocumentMoniker": "Exam2WindowsService\\ProjectInstaller.cs",
+              "ToolTip": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\ProjectInstaller.cs",
+              "RelativeToolTip": "Exam2WindowsService\\ProjectInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T18:54:56.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectInstaller.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\ProjectInstaller.cs",
+              "RelativeDocumentMoniker": "Exam2WindowsService\\ProjectInstaller.cs",
+              "ToolTip": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\ProjectInstaller.cs [Design]",
+              "RelativeToolTip": "Exam2WindowsService\\ProjectInstaller.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T17:49:15.291Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowsServiceFileMonitor.cs",
+              "DocumentMoniker": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\WindowsServiceFileMonitor.cs",
+              "RelativeDocumentMoniker": "Exam2WindowsService\\WindowsServiceFileMonitor.cs",
+              "ToolTip": "C:\\Users\\HaDe\\source\\repos\\Exam2WindowsService\\Exam2WindowsService\\WindowsServiceFileMonitor.cs",
+              "RelativeToolTip": "Exam2WindowsService\\WindowsServiceFileMonitor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T16:47:49.022Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

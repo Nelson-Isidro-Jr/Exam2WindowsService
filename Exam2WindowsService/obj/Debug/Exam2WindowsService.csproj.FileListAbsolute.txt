@@ -1,0 +1,9 @@
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe.config
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.pdb
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.csproj.AssemblyReference.cache
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.csproj.CoreCompileInputs.cache
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.exe
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.pdb
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.ProjectInstaller.resources
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.csproj.GenerateResource.cache
