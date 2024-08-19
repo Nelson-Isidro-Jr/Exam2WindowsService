@@ -8,6 +8,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using NLog;
 
 namespace Exam2WindowsService
 {
@@ -16,6 +17,7 @@ namespace Exam2WindowsService
         private FileSystemWatcher folder1Watcher;
         private readonly string sourceFolderPath = @"C:\Folder1";
         private readonly string destinationFolderPath = @"C:\Folder2";
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         public WindowsServiceFileMonitor()
         {
@@ -91,7 +93,26 @@ namespace Exam2WindowsService
 
         private void LogEvent(string message, EventLogEntryType type)
         {
+            // Log to Event Viewer
             EventLog.WriteEntry("WindowsServiceFileMonitor", message, type);
+
+            // Log to Rolling File using NLog
+            switch (type)
+            {
+                case EventLogEntryType.Information:
+                    logger.Info(message);
+                    break;
+                case EventLogEntryType.Warning:
+                    logger.Warn(message);
+                    break;
+                case EventLogEntryType.Error:
+                    logger.Error(message);
+                    break;
+                default:
+                    logger.Info(message);
+                    break;
+            }
+
         }
 
         protected override void OnStop()

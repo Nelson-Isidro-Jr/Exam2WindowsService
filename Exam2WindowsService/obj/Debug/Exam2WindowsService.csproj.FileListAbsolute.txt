@@ -7,3 +7,7 @@ C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exa
 C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.csproj.CoreCompileInputs.cache
 C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.exe
 C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2WindowsService.pdb
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\NLog.config
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\NLog.dll
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\NLog.xml
+C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\obj\Debug\Exam2Win.55B898D6.Up2Date

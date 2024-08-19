@@ -154,3 +154,50 @@ Affected parameters are:
 Removing EventLog source WindowsServiceFileMonitor.
 Service WindowsServiceFileMonitor is being removed from the system...
 Service WindowsServiceFileMonitor was successfully removed from the system.
+Installing assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+   logtoconsole = 
+Installing service WindowsServiceFileMonitor...
+Service WindowsServiceFileMonitor has been successfully installed.
+Creating EventLog source WindowsServiceFileMonitor in log Application...
+Committing assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+Removing EventLog source WindowsServiceFileMonitor.
+Service WindowsServiceFileMonitor is being removed from the system...
+Service WindowsServiceFileMonitor was successfully removed from the system.
+Installing assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+   logtoconsole = 
+Installing service WindowsServiceFileMonitor...
+Service WindowsServiceFileMonitor has been successfully installed.
+Creating EventLog source WindowsServiceFileMonitor in log Application...
+Committing assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   i = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+   logtoconsole = 
+Uninstalling assembly 'C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.InstallLog
+   assemblypath = C:\Users\HaDe\source\repos\Exam2WindowsService\Exam2WindowsService\bin\Debug\Exam2WindowsService.exe
+Removing EventLog source WindowsServiceFileMonitor.
+Service WindowsServiceFileMonitor is being removed from the system...
+Service WindowsServiceFileMonitor was successfully removed from the system.
+Attempt to stop service WindowsServiceFileMonitor.
