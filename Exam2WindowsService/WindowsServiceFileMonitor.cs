@@ -20,12 +20,22 @@ namespace Exam2WindowsService
         public WindowsServiceFileMonitor()
         {
             InitializeComponent();
-            
+            SetupEventLog();
+        }
+
+        private void SetupEventLog()
+        {
+            if (!EventLog.SourceExists("WindowsServiceFileMonitor"))
+            {
+                EventLog.CreateEventSource("WindowsServiceFileMonitor", "Application");
+            }
+
+            EventLog.Source = "WindowsServiceFileMonitor";
+            EventLog.Log = "Application";
         }
 
         private void SetupFileSystemWatcher()
         {
-
             folder1Watcher = new FileSystemWatcher(sourceFolderPath)
             {
                 EnableRaisingEvents = true,
@@ -33,49 +43,61 @@ namespace Exam2WindowsService
                 Filter = "*.*"
             };
             folder1Watcher.Created += OnFileCreated;
-
+            LogEvent("File system watcher initialized and started.", EventLogEntryType.Information);
         }
 
         protected override void OnStart(string[] args)
         {
             SetupFileSystemWatcher();
+            LogEvent("Service started successfully.", EventLogEntryType.Information);
         }
 
         private void OnFileCreated(object sender, FileSystemEventArgs e)
         {
             try
             {
-                
+                LogEvent($"File created: {e.FullPath}. Waiting before processing...", EventLogEntryType.Information);
+
                 System.Threading.Thread.Sleep(4000);
 
-                // Construct the destination file path
-                string destinationFilePath = Path.Combine(destinationFolderPath, Path.GetFileName(e.FullPath));
+                string destinationFilePath = GenerateUniqueFilePath(e.FullPath);
 
-                // Check if the file already exists and rename if necessary
-                int count = 1;
-                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(e.FullPath);
-                string extension = Path.GetExtension(e.FullPath);
-
-                while (File.Exists(destinationFilePath))
-                {
-                    string tempFileName = $"{fileNameWithoutExtension}_{count}{extension}";
-                    destinationFilePath = Path.Combine(destinationFolderPath, tempFileName);
-                    count++;
-                }
-
-               
                 File.Move(e.FullPath, destinationFilePath);
+
+                LogEvent($"File moved from {e.FullPath} to {destinationFilePath}.", EventLogEntryType.Information);
             }
             catch (Exception ex)
             {
-               
-                EventLog.WriteEntry("WindowsServiceFileMonitor", $"Error moving file: {ex.Message}", EventLogEntryType.Error);
+                LogEvent($"Error moving file: {ex.Message}", EventLogEntryType.Error);
             }
+        }
+
+        private string GenerateUniqueFilePath(string sourceFilePath)
+        {
+            string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(sourceFilePath);
+            string extension = Path.GetExtension(sourceFilePath);
+            string destinationFilePath = Path.Combine(destinationFolderPath, Path.GetFileName(sourceFilePath));
+
+            int count = 1;
+            while (File.Exists(destinationFilePath))
+            {
+                string tempFileName = $"{fileNameWithoutExtension}_{count}{extension}";
+                destinationFilePath = Path.Combine(destinationFolderPath, tempFileName);
+                count++;
+            }
+
+            return destinationFilePath;
+        }
+
+        private void LogEvent(string message, EventLogEntryType type)
+        {
+            EventLog.WriteEntry("WindowsServiceFileMonitor", message, type);
         }
 
         protected override void OnStop()
         {
             folder1Watcher.Dispose();
+            LogEvent("Service stopped successfully.", EventLogEntryType.Information);
         }
     }
 }
